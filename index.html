@@ -11,11 +11,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Strive Book Shop</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <!-- CART LIST -->
+      <ul id="cart-list">
+        <li></li>
+      </ul>
+
+      <!-- CARDS CONTAINER -->
+      <div
+        id="card-box"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
+      >
+        <!-- <div class="col mb-4">
+          <div class="card mb-3">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Book title</h5>
+              <p class="card-text">Price</p>
+              <a href="#" class="btn btn-primary">Cart</a>
+              <a href="#" class="btn btn-primary">Skip</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
 
     <!-- BOOTSTRAP SCRIPT -->
     <script
