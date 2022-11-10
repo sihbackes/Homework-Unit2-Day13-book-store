@@ -15,17 +15,29 @@
     <title>Strive Book Shop</title>
   </head>
   <body>
+    <!-- SEARCH -->
+    <div class="container-fluid">
+      <div class="row w-100">
+        <div class="mx-auto my-4 w-100 d-flex">
+          <input
+            type="text"
+            class="p-2 w-50 mx-auto"
+            placeholder="Search..."
+            oninput="search(this.value)"
+          />
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <!-- CART LIST -->
-      <ul id="cart-list">
-        <li></li>
-      </ul>
+      <!-- **CART LIST -->
+      <div id="shopping-cart"></div>
 
-      <!-- CARDS CONTAINER -->
+      <!--** CARDS CONTAINER -->
       <div
         id="card-box"
         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
       >
+        <!-- !replaced on JS -->
         <!-- <div class="col mb-4">
           <div class="card mb-3">
             <img src="..." class="card-img-top" alt="..." />
@@ -40,7 +52,7 @@
       </div>
     </div>
 
-    <!-- BOOTSTRAP SCRIPT -->
+    <!-- **BOOTSTRAP SCRIPT -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

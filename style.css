@@ -8,3 +8,28 @@
 .imagem {
   height: 350px;
 }
+#shopping-cart {
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  min-width: 50px;
+  min-height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+  transition: all 0.4s;
+
+  max-width: unset;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+#shopping-cart > div {
+  transition: all 0.4s;
+  padding: 4em;
+}
+
+.selected {
+  border: 3px solid green;
+}
